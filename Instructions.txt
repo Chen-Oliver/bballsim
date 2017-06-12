@@ -1,0 +1,51 @@
+
+Instructions/Info:
+=================================
+There are 3 “phases” in our project: the drafting phase, regular season and playoffs.
+You can enter your desired username when you run the gameApp file
+>java gameApp user team (doesn’t matter if there are spaces)
+
+1)Drafting Phase:
+==================
+-This is when teams form their teams of 5 players(PG,SG,SF,PF,C)
+
+Drafting Commands:
+——————————————————
+	-‘see draft’ shows all available players and their ranks(on the left)
+	-‘seePG’, ‘seeSG’, ‘seeSF’, ‘seePF’, ‘seeC’ show available players in those respective positions
+	-‘draft <rank>’ e.g.(‘draft 23’) drafts the player at <rank>
+Notes:
+———————
+You may only draft from 1-80 and only 1 player from each position
+     After a draft attempt there will be a message saying which positions you are missing(e.g. Missing Positions: PG, SG) so you can use seePG and/or seeSG to see the best available player that fits your teams(recommended that you use in conjunction with ‘see draft’)
+
+
+2)Regular Season:
+==================
+-This is when your team plays against other teams 3 times(there are 16 teams total) so you play 45 totals games
+
+Commands:
+——————————
+	-‘see teams’ prints all the teams with their players
+	-‘trade’ will print out a statement that asks you to enter ‘<OtherTeamName>,<OtherPlayerName>,<YourPlayerName>’ with no spaces
+         to trade your player for a better one. This can only be done once after a game(not including typos)
+	-‘play game’ makes all 16 teams play a game(so 8 matches) and it prints the boxscore for your(user) match as well as an injury and
+	recovery from injury list for all teams.
+	-‘rankings’ lists the teams by the record(win %)
+	-‘play season’ plays the entire season. You won’t be able to trade if you do this.
+
+Notes/tips:
+————————————
+Trading depends on the difference between the overalls of the players you wish to trade.
+Tip: If you want to trade your player with a low overall for one with high overall you might want to see if that higher overall player gets injured. Otherwise you should start off the season by attempting trades with higher percentages of working.
+Unfortunately, the boxscore might be misaligned.
+
+3)Playoffs:
+===============
+-This is where the top 8 teams play best of fives in a tournament style to see who gets the championship.
+
+Commands:
+——————————
+	-‘play series’ plays one round of the playoffs(semifinals -> quarterfinals->finals)
+	-‘play all’ plays all the series at once
+	-commands from the regular season will not work here.
